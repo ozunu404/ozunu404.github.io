@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Deletion | Oppad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #ffffff; color: #09090b; }
+        .text-muted-foreground { color: #71717a; }
+        .bg-muted { background-color: #f4f4f5; }
+        .border-border { border-color: #e4e4e7; }
+    </style>
+</head>
+<body class="min-h-screen font-sans bg-gray-50">
+
+    <div class="sticky top-0 z-10 bg-white border-b border-border">
+        <div class="flex items-center gap-3 p-4 max-w-3xl mx-auto">
+            <a href="./index.html" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            </a>
+            <h1 class="text-lg font-semibold text-gray-900">Account Deletion</h1>
+        </div>
+    </div>
+
+    <main class="p-6 max-w-2xl mx-auto space-y-8 pt-10">
+        
+        <div class="space-y-4">
+            <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Oppad Account Deletion</h2>
+            <p class="text-muted-foreground leading-relaxed">
+                In accordance with Google Play policies, users of <strong>Oppad</strong> have the right to request the deletion of their account and associated data.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-border space-y-6">
+            <h3 class="text-xl font-semibold text-gray-900">How to request deletion:</h3>
+            <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                    <div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                    <p class="text-gray-700">Click the button below to draft a request from your registered email.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                    <p class="text-gray-700 text-sm">Include your <strong>username/email</strong> used for Oppad.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                    <p class="text-gray-700 text-sm">Our support team will verify and process your request within <strong>48-72 hours</strong>.</p>
+                </li>
+            </ul>
+
+            <div class="pt-4">
+                <a href="mailto:ozunuoden@gmail.com?subject=Oppad Account Deletion Request&body=Hello Support Team,%0D%0A%0D%0AI would like to request the permanent deletion of my Oppad account.%0D%0A%0D%0ARegistered Email/Username: [Insert Here]%0D%0A%0D%0AThank you." 
+                   class="inline-flex items-center justify-center w-full px-6 py-3 text-base font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all shadow-md">
+                   Email Support Team
+                </a>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <h3 class="text-xl font-semibold text-gray-900 border-b border-border pb-2">Data Retention & Deletion Policy:</h3>
+            
+            <div class="grid gap-6">
+                <div>
+                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2">Deleted Data:</h4>
+                    <p class="text-muted-foreground text-sm leading-relaxed">
+                        Your account profile (email, password hash), user ID, and private message history will be permanently erased from our Supabase database.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2">Kept Data:</h4>
+                    <p class="text-muted-foreground text-sm leading-relaxed">
+                        Public bus sightings or reports may be de-identified and retained for community historical accuracy but will no longer be linked to your identity.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2">Retention:</h4>
+                    <p class="text-muted-foreground text-sm leading-relaxed">
+                        Once processed, data is immediately removed from active servers. Residual data in encrypted backups may persist for up to 30 days before being overwritten.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-12 pb-12 text-center border-t border-border">
+            <p class="text-xs text-muted-foreground italic">
+                Last updated: January 25, 2026
+            </p>
+        </div>
+    </main>
+</body>
+</html>

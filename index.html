@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppad: Bus and Taxi Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Hero Gradient using Brand Color #F59F0A */
+        .hero-gradient { background: linear-gradient(135deg, #F59F0A 0%, #D97706 100%); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-[#F59F0A] rounded-lg flex items-center justify-center font-bold text-white text-xl">O</div>
+                <span class="font-bold text-xl tracking-tight text-[#F59F0A]">Oppad</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <a href="#features" class="hover:text-[#F59F0A] transition">Features</a>
+                <a href="#how-it-works" class="hover:text-[#F59F0A] transition">How it Works</a>
+                <a href="./contact.html" class="hover:text-[#F59F0A] transition">Support</a>
+                <a href="https://play.google.com/store/apps/details?id=com.oppad.app" class="bg-[#F59F0A] text-white px-5 py-2 rounded-full hover:bg-[#D97706] transition shadow-md shadow-orange-100">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient text-white pt-20 pb-32">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Your Commute, Simplified.</h1>
+                <p class="text-xl text-orange-50 leading-relaxed opacity-90">
+                    No more guessing at the bus stop. Join the community-powered movement to track, log, and share bus and taxi arrivals in real-time.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.oppad.app" class="transition transform hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-14">
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-64 h-[520px] bg-gray-900 rounded-[3rem] border-[8px] border-gray-900 shadow-2xl overflow-hidden relative">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-900 rounded-b-xl z-10"></div>
+                    <img src="https://raw.githubusercontent.com/ozunu404/oppad/e3e0aac96eda88f6f796a8a37c1204f284fcbe4b/oppad-app.png" alt="Oppad App Screenshot" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+            <h2 class="text-3xl font-bold text-gray-900 font-bold">Built by a Commuter, for Commuters.</h2>
+            <p class="text-lg text-gray-600">
+                We’ve all been there—standing on the curb, watching the minutes tick by, wondering if the bus already passed or if the taxi is just around the corner. <strong>Oppad</strong> was created to solve the uncertainty of public transport. By using real-time community logs, we bring transparency to your daily journey.
+            </p>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Key Features</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition border-t-4 border-t-[#F59F0A]">
+                <div class="text-4xl mb-4">📍</div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Real-Time Logging</h3>
+                <p class="text-gray-600 text-sm">See exactly when the last vehicle was spotted on your route by other users.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition border-t-4 border-t-[#F59F0A]">
+                <div class="text-4xl mb-4">💬</div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Route-Specific Chats</h3>
+                <p class="text-gray-600 text-sm">Talk to fellow commuters. Get instant updates on traffic, roadblocks, or safety.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition border-t-4 border-t-[#F59F0A]">
+                <div class="text-4xl mb-4">🤝</div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Community Driven</h3>
+                <p class="text-gray-600 text-sm">The more people log, the more accurate it gets. Help your neighbors while they help you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">How It Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center space-y-4">
+                    <div class="text-4xl font-black text-[#F59F0A]">01.</div>
+                    <h3 class="text-xl font-semibold">Open the App</h3>
+                    <p class="text-gray-400">Select your transport mode (Bus or Taxi) and your specific route.</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="text-4xl font-black text-[#F59F0A]">02.</div>
+                    <h3 class="text-xl font-semibold">Check Arrivals</h3>
+                    <p class="text-gray-400">View the latest logs submitted by other users currently on the road.</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="text-4xl font-black text-[#F59F0A]">03.</div>
+                    <h3 class="text-xl font-semibold">Contribute</h3>
+                    <p class="text-gray-400">When your ride arrives, tap "Log Arrival" to update the community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 max-w-4xl mx-auto px-6 text-center">
+        <div class="bg-orange-50 p-12 rounded-3xl space-y-6 border border-orange-100">
+            <h2 class="text-3xl font-bold text-gray-900">Your Data, Protected.</h2>
+            <p class="text-gray-700 leading-relaxed">
+                We use industry-standard encryption and <strong>Supabase Authentication</strong> to ensure your account is secure. We only collect the data necessary to provide arrival updates, and we never sell your personal information.
+            </p>
+            <a href="./privacy.html" class="inline-block font-bold text-[#F59F0A] hover:text-[#D97706] hover:underline transition">Read our Privacy Policy →</a>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <p class="font-bold text-lg text-gray-900">Westerlund Technologies</p>
+                    <p class="text-gray-500 text-sm">Cape Town, South Africa</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 text-sm font-medium text-gray-500">
+                    <a href="./terms.html" class="hover:text-[#F59F0A] transition">Terms</a>
+                    <a href="./privacy.html" class="hover:text-[#F59F0A] transition">Privacy</a>
+                    <a href="./request-deletion.html" class="hover:text-[#F59F0A] transition">Request Deletion</a>                    
+                    <a href="./delete-account.html" class="hover:text-[#F59F0A] transition">Delete Account</a>
+                    <a href="./contact.html" class="hover:text-[#F59F0A] transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-xs text-gray-400 border-t border-gray-50 pt-8">
+                &copy; 2026 Westerlund Technologies. Oppad is a community-driven tool and not affiliated with any official transit company.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
