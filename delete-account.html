@@ -28,7 +28,7 @@
         <div class="space-y-4">
             <h2 class="text-3xl font-bold text-gray-900">Delete Your Account</h2>
             <p class="text-lg text-muted-foreground leading-relaxed">
-                To permanently delete your **Oppad** account and all associated transit data, please follow these steps within the app:
+                To permanently delete your **Oppad** account and all associated personal identifiers, please follow these steps within the app:
             </p>
         </div>
 
@@ -47,10 +47,30 @@
             </div>
         </div>
 
+        <!-- GOOGLE REQUIREMENT: CLEAR DATA RETENTION DECLARATION -->
+        <div class="space-y-4 pt-2">
+            <h3 class="text-lg font-semibold text-gray-900">Data Retention & Deletion Policy</h3>
+            
+            <div class="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                <p>
+                    <strong class="text-gray-900">Permanently Erased Data:</strong> 
+                    Your core profile metrics (email address, password hashes), account identifiers, unique user IDs, reliability scores, and favorite routes will be instantly and irreversibly scrubbed from our Supabase database. Any precise GPS coordinates tied directly to your user metadata will be permanently detached.
+                </p>
+                <p>
+                    <strong class="text-gray-900">Anonymized Data Retention:</strong> 
+                    Public minibus taxi and bus transit sightings or route reports logged to the global community feed will be completely de-identified (anonymized) to preserve historical accuracy for commuters, but will never be linked back to your identity or past account metadata.
+                </p>
+                <p>
+                    <strong class="text-gray-900">Backup Lifecycle:</strong> 
+                    Once processed, records are immediately scrubbed from live databases. Residual encrypted structural fragments in platform server backups may persist for up to 30 days before being completely overwritten.
+                </p>
+            </div>
+        </div>
+
         <div class="p-4 bg-red-50 border-l-4 border-red-500 rounded-r-lg">
             <h3 class="text-red-800 font-bold mb-1 italic">Note:</h3>
-            <p class="text-red-700 leading-relaxed">
-                This action is irreversible. All sightings, badges, and favorite routes will be permanently removed from our database.
+            <p class="text-red-700 leading-relaxed text-sm">
+                This action is completely irreversible. Once confirmed, you will lose access to your profile validation stats and custom configurations immediately.
             </p>
         </div>
 
@@ -59,13 +79,13 @@
             <p class="text-muted-foreground leading-relaxed text-sm">
                 If you no longer have the app installed and wish to request data deletion, please email us at 
                 <a href="mailto:ozunuoden@gmail.com" class="text-blue-600 underline font-medium">ozunuoden@gmail.com</a> 
-                from the email address associated with your account. We will process your request within 7 business days.
+                from the email address associated with your account. Our support team will verify, process, and completely scrub your account metadata within 48 to 72 hours.
             </p>
         </div>
 
         <div class="pt-12 pb-12 text-center border-t border-border">
             <p class="text-xs text-muted-foreground italic">
-                Last updated: January 25, 2026
+                Last updated: June 1, 2026
             </p>
         </div>
     </main>
