@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | MyTransit SA</title>
+    <title>Privacy Policy | Oppad</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Replicating the "ScrollArea" feel */
@@ -27,21 +27,23 @@
     <main class="p-6 max-w-3xl mx-auto space-y-8">
         
         <div class="text-center space-y-1 pt-4">
-            <p class="text-sm text-muted-foreground font-medium">Effective Date: January 25, 2026</p>
+            <p class="text-sm text-muted-foreground font-medium">Effective Date: June 1, 2026</p>
             <p class="text-sm text-muted-foreground font-medium">Territory: South Africa</p>
         </div>
 
+        <!-- Section 1 -->
         <section class="space-y-4">
             <h2 class="text-xl font-semibold text-gray-900">1. Introduction</h2>
             <p class="text-muted-foreground leading-relaxed">
-                Welcome to our community-powered bus-tracking application ("the App"). 
+                Welcome to our community-powered public transport and taxi tracking application ("the App"). 
                 We are committed to protecting your privacy and ensuring that your personal information is handled lawfully, transparently, and securely in accordance with the Protection of Personal Information Act (POPIA).
             </p>
             <p class="text-muted-foreground leading-relaxed">
-                To provide our services, including accurate bus sightings and community contributions, users are required to create an account. This policy explains what data we collect and your rights regarding that data.
+                To provide our services, including accurate minibus taxi or bus sightings, route timelines, and community contributions, users are required to create an account. This policy explains what data we collect and your rights regarding that data.
             </p>
         </section>
 
+        <!-- Section 2 -->
         <section class="space-y-4">
             <h2 class="text-xl font-semibold text-gray-900">2. Compliance with POPIA</h2>
             <p class="text-muted-foreground leading-relaxed">
@@ -56,6 +58,7 @@
             </ul>
         </section>
 
+        <!-- Section 3 -->
         <section class="space-y-4">
             <h2 class="text-xl font-semibold text-gray-900">3. Information We Collect</h2>
             
@@ -80,13 +83,21 @@
             </div>
 
             <div class="space-y-3">
-                <h3 class="text-lg font-medium text-gray-900">3.3 Location Information</h3>
+                <h3 class="text-lg font-medium text-gray-900">3.3 Location Information (Precise Telemetry)</h3>
                 <p class="text-muted-foreground leading-relaxed">
-                    We collect location information that you manually provide, such as the name of a bus stop or area, to log sightings. We do <strong>not</strong> access your device's GPS.
+                    To provide live transit streams and accurate mapping feeds, the App requests permission to access your device's <strong>Precise Location Services (GPS)</strong>. When you explicitly log a transit sighting using your device telemetry, we collect and store:
+                </p>
+                <ul class="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                    <li>Precise geographical coordinates (Latitude and Longitude)</li>
+                    <li>Textual representations of the stop name or landmark location</li>
+                </ul>
+                <p class="text-muted-foreground leading-relaxed text-sm">
+                    This tracking is performative and only runs in the foreground when you interact with the sighting feature. This location information is transmitted to our cloud database to be mapped within the route feed for other community members.
                 </p>
             </div>
         </section>
 
+        <!-- Section 4 -->
         <section class="space-y-4">
             <h2 class="text-xl font-semibold text-gray-900">4. Advertising and Third Parties</h2>
             <p class="text-muted-foreground leading-relaxed">
@@ -97,6 +108,7 @@
             </p>
         </section>
 
+        <!-- Section 5 -->
         <section class="space-y-4">
             <h2 class="text-xl font-semibold text-gray-900">5. Data Retention & Account Deletion</h2>
             <p class="text-muted-foreground leading-relaxed">
@@ -104,10 +116,11 @@
             </p>
             <ul class="list-disc list-inside text-muted-foreground space-y-1 ml-4">
                 <li><strong>Right to Delete:</strong> You may request the deletion of your account and all associated personal data at any time via the App settings or by contacting support.</li>
-                <li><strong>Data Scrubbing:</strong> Upon account deletion, we remove your email and personal identifiers from our database. Anonymized bus sightings may remain to maintain community transit history, but they will no longer be linked to you.</li>
+                <li><strong>Data Scrubbing:</strong> Upon account deletion, we remove your email, precise coordinates, and personal identifiers from our storage layers. Anonymized public transit sightings may remain to maintain community timeline history, but they will be permanently decoupled from your identity.</li>
             </ul>
         </section>
 
+        <!-- Section 6 -->
         <section class="space-y-4">
             <h2 class="text-xl font-semibold text-gray-900">6. International Data Transfers</h2>
             <p class="text-muted-foreground leading-relaxed">
@@ -115,6 +128,7 @@
             </p>
         </section>
 
+        <!-- Section 7 -->
         <section class="space-y-4">
             <h2 class="text-xl font-semibold text-gray-900">7. Contact and Regulator</h2>
             <p class="text-muted-foreground">
@@ -132,7 +146,7 @@
 
         <div class="pt-8 pb-12 text-center">
             <p class="text-xs text-muted-foreground italic">
-                Last updated: January 25, 2026
+                Last updated: June 1, 2026
             </p>
         </div>
     </main>
