@@ -28,57 +28,86 @@
         <div class="space-y-4">
             <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Oppad Account Deletion</h2>
             <p class="text-muted-foreground leading-relaxed">
-                In accordance with Google Play policies, users of <strong>Oppad</strong> have the right to request the deletion of their account and associated data.
+                In accordance with Google Play policies and POPIA, users of <strong>Oppad</strong> have the right to request the permanent deletion of their account profile and all associated telemetry tracking historical data.
             </p>
         </div>
 
+        <!-- In-App Deletion Mechanism -->
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-border space-y-4">
+            <h3 class="text-xl font-semibold text-gray-900">Method 1: Fast In-App Deletion</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed">
+                The fastest way to remove your data is directly inside the application. This process executes immediately:
+            </p>
+            <div class="bg-muted p-4 rounded-lg space-y-3 text-sm border border-gray-200">
+                <div class="flex gap-3">
+                    <div class="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white font-bold text-xs">1</div>
+                    <p class="text-gray-700">Navigate to your <span class="font-semibold text-gray-900 italic">Profile</span> tab.</p>
+                </div>
+                <div class="flex gap-3">
+                    <div class="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white font-bold text-xs">2</div>
+                    <p class="text-gray-700">Tap <span class="font-semibold text-gray-900">Delete Account</span> located at the bottom of the options menu.</p>
+                </div>
+                <div class="flex gap-3">
+                    <div class="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white font-bold text-xs">3</div>
+                    <p class="text-gray-700">Type <span class="font-mono bg-gray-200 px-1.5 py-0.5 rounded text-red-600 font-bold text-xs">DELETE</span> to confirm the irreversible removal.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alternative Remote Deletion Request -->
         <div class="bg-white p-6 rounded-xl shadow-sm border border-border space-y-6">
-            <h3 class="text-xl font-semibold text-gray-900">How to request deletion:</h3>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-900">Method 2: Alternative Email Request</h3>
+                <p class="text-sm text-muted-foreground mt-1">
+                    If you have already uninstalled the app, you can request manual removal from our support team:
+                </p>
+            </div>
             <ul class="space-y-4">
                 <li class="flex items-start gap-3">
                     <div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                    <p class="text-gray-700">Click the button below to draft a request from your registered email.</p>
+                    <p class="text-gray-700 text-sm">Click the verification button below to generate a pre-formatted email structure.</p>
                 </li>
                 <li class="flex items-start gap-3">
                     <div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                    <p class="text-gray-700 text-sm">Include your <strong>username/email</strong> used for Oppad.</p>
+                    <p class="text-gray-700 text-sm">Ensure you send the request from the exact <strong>registered email address</strong> used on Oppad.</p>
                 </li>
                 <li class="flex items-start gap-3">
                     <div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                    <p class="text-gray-700 text-sm">Our support team will verify and process your request within <strong>48-72 hours</strong>.</p>
+                    <p class="text-gray-700 text-sm">Our engineering support team will verify and fully process your server removal within <strong>48–72 hours</strong>.</p>
                 </li>
             </ul>
 
-            <div class="pt-4">
-                <a href="mailto:ozunuoden@gmail.com?subject=Oppad Account Deletion Request&body=Hello Support Team,%0D%0A%0D%0AI would like to request the permanent deletion of my Oppad account.%0D%0A%0D%0ARegistered Email/Username: [Insert Here]%0D%0A%0D%0AThank you." 
+            <div class="pt-2">
+                <a href="mailto:ozunuoden@gmail.com?subject=Oppad Account Deletion Request&body=Hello Support Team,%0D%0A%0D%0AI would like to request the permanent deletion of my Oppad account and all associated personal data profile records.%0D%0A%0D%0ARegistered Email/Username: [Insert Here]%0D%0A%0D%0AThank you." 
                    class="inline-flex items-center justify-center w-full px-6 py-3 text-base font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all shadow-md">
-                   Email Support Team
+                    Email Support Team
                 </a>
             </div>
         </div>
 
+        <!-- Retention Parameters -->
         <div class="space-y-6">
             <h3 class="text-xl font-semibold text-gray-900 border-b border-border pb-2">Data Retention & Deletion Policy:</h3>
             
             <div class="grid gap-6">
                 <div>
-                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2">Deleted Data:</h4>
+                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2 text-red-600">Permanently Erased Data:</h4>
                     <p class="text-muted-foreground text-sm leading-relaxed">
-                        Your account profile (email, password hash), user ID, and private message history will be permanently erased from our Supabase database.
+                        Your account authentication credentials (email, password hashes), unique user identifier codes (UID), active profile badges, custom route configurations, and system configuration logs are completely and irreversibly dropped from our Supabase production tables. Any precise GPS tracking history tied to your user metadata is permanently removed.
                     </p>
                 </div>
 
                 <div>
-                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2">Kept Data:</h4>
+                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2 text-gray-700">Anonymized Data Kept:</h4>
                     <p class="text-muted-foreground text-sm leading-relaxed">
-                        Public bus sightings or reports may be de-identified and retained for community historical accuracy but will no longer be linked to your identity.
+                        Public minibus taxi or bus transit sightings, coordinate entries uploaded to shared routes, and vehicle timeline logs will be completely stripped of personal identifiers (anonymized) and retained on the map grid to preserve historical crowd-sourced tracking accuracy for commuters. These lines can never be traced back to you.
                     </p>
                 </div>
 
                 <div>
-                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2">Retention:</h4>
+                    <h4 class="font-bold text-gray-900 text-sm uppercase tracking-wider mb-2 text-gray-700">Backup Retention Cycle:</h4>
                     <p class="text-muted-foreground text-sm leading-relaxed">
-                        Once processed, data is immediately removed from active servers. Residual data in encrypted backups may persist for up to 30 days before being overwritten.
+                        Once requested or triggered, operations happen instantly on the live, active database layer. Dead structural fragments resting within secure, encrypted system backups may linger for up to 30 days before being fully overwritten during automated rolling schedule resets.
                     </p>
                 </div>
             </div>
@@ -86,7 +115,7 @@
 
         <div class="pt-12 pb-12 text-center border-t border-border">
             <p class="text-xs text-muted-foreground italic">
-                Last updated: January 25, 2026
+                Last updated: June 1, 2026
             </p>
         </div>
     </main>
